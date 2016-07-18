@@ -2,7 +2,7 @@ var path = require("path");
 
 module.exports = {
   context: __dirname,
-  entry: "./frontend/velvetRoom.jsx",
+  entry: "./frontend/velvetRoom.js",
   output: {
     path: path.join(__dirname, 'app', 'assets', 'javascripts'),
     filename: "bundle.js",
