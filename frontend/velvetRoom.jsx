@@ -11,22 +11,23 @@ var hashHistory = ReactRouter.hashHistory;
 
 //Components
 var App = require('./components/App');
+var FrontPage = require('./components/FrontPage');
 
 var Router = (
   <Router history={ hashHistory }>
     <Route path="/" component={ App }>
-    <IndexRoute component={ FrontPage } />
+    <IndexRoute component={ FrontPage }/>
     </Route>
   </Router>
 );
 
-var MyComponent = React.createClass({
-  render() {
-    return(
-      <div>Hello World</div>
-    );
-  }
-});
+// var MyComponent = React.createClass({
+//   render() {
+//     return(
+//       <div>Hello World</div>
+//     );
+//   }
+// });
 
 document.addEventListener("DOMContentLoaded", () => {
   var root = document.getElementById('content');
