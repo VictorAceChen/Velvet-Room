@@ -2,5 +2,6 @@
   "undef": true,
   "unused": true,
   "predef": [ "MY_GLOBAL" ],
-  "esnext": true
+  "esnext": true,
+  "browser" : true
 }
