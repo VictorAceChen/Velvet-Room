@@ -1,4 +1,5 @@
 import React from 'react';
+import Chat from './Chat';
 
 class App extends React.Component {
 
@@ -6,7 +7,8 @@ class App extends React.Component {
     return (
       <div id="main_page">
         <h1>VelvetRoom</h1>
-          {this.props.children}
+        {this.props.children}
+        <Chat/>
       </div>
     );
   }

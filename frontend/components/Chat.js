@@ -4,11 +4,26 @@ class Chat extends React.Component {
 
   render() {
     return (
-      <div>
-      "Welcome to the Velvet Room. This place exists between dream and reality, mind and matter."
-—Igor
+      <div id="chat">
+          <ul id="messages"></ul>
+          <form action="">
+            <input id="m" autocomplete="off" /><button>Send</button>
+          </form>
+          <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+          <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+          <script>
+            var socket = io();
+            {/*$('form').submit(function(){
+              socket.emit('chat message', $('#m').val());
+              $('#m').val('');
+              return false;
+            });
+            socket.on('chat message', function(msg){
+              $('#messages').append($('<li>').text(msg));
+            });*/}
+          </script>
       </div>
-    )
+    );
   }
 }
 
