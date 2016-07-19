@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {Router, Route, IndexRoute, hashHistory} from 'react-router';
 
-import App from './components/App.js';
+import App from './components/App';
 import FrontPage from './components/FrontPage';
 
   var Routes = (
